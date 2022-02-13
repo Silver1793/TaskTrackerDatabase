@@ -44,7 +44,6 @@ function EditExercise(props) {
   };
 
   useEffect(() => {
-    console.log(props);
     axios
       .get("http://localhost:6001/exercises/" + id)
       .then((res) => {
@@ -59,7 +58,7 @@ function EditExercise(props) {
         setUsers(res.data.map((user) => user.username));
       }
     });
-  }, []);
+  }, [id]);
 
   return (
     <div>

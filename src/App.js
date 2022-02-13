@@ -1,12 +1,6 @@
 //import "./App.css";
 import React from "react";
-import { useState, useEffect } from "react";
-import {
-  BrowserRouter,
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ExerciseList from "./components/ExerciseList";
 import Navbar from "./components/Navbar";
